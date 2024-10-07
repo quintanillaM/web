@@ -1,0 +1,49 @@
+html{
+    background: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contenedor{ 
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 40%;
+    
+
+  
+
+}
+.contenedor-sm{
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 40%;
+}
+.table {
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    border-collapse:collapse;
+}
+.tabla  tr.tabla td{
+    border: 1´x solid black;
+    padding: 5px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    background-color: blue;
+    color: bisque;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+input{
+width: 200px;
+margin: 0;
+padding: 10px;
+}
+.formulario{
+    width: 40%;
+    margin: 20px auto;
+}
+
+/*

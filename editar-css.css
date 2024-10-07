@@ -1,0 +1,145 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Sección del formulario */
+.user {
+    background-color: #1f1f1f;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #00bfff; /* Borde celeste */
+    margin-bottom: 20px; /* Separación debajo del formulario */
+}
+
+label {
+    display: block;
+    margin: 10px 0 10px 0; /* Aumenta la separación entre el label y el campo */
+    color: #ffffff;
+}
+
+/* Se hacen los inputs más delgados */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0; /* Aumenta el margen para más separación entre campos */
+    border: 2px solid #00bfff; /* Borde celeste en los inputs */
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+input[type="text"]::placeholder {
+    color: #aaaaaa;
+}
+
+/* Botón con efecto de borde de colores y degradado */
+.btn-guardar {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px; /* Espacio entre los campos de texto y el botón */
+    background-color: #3b3b3b;
+    color: #ffffff;
+    border: 2px solid #00bfff; /* Borde celeste */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+/* Borde colorido del botón */
+.btn-guardar::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff0047, #ff9900, #00ffcc, #00bfff, #ff00ff);
+    background-size: 200% 200%;
+    z-index: -1;
+    border-radius: 7px;
+    animation: borderColors 4s ease infinite;
+}
+
+/* Efecto hover para el botón */
+.btn-guardar:hover::before {
+    background-position: 100% 0;
+}
+
+.btn-guardar:hover {
+    background: linear-gradient(-20deg, #00ffcc, #ff00ff, #00bfff, #ff00ff);
+    color: #ffffff;
+}
+
+/* Animación para el borde de colores */
+@keyframes borderColors {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+input[type="password"] { /* Aplicando los mismos estilos tanto a texto como a contraseña */
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 2px solid #00bfff; /* Borde celeste */
+    border-radius: 5px;
+    background-color: #333333; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder { /* Estilo para los placeholders */
+    color: #aaaaaa;
+}
+
+/*CERRAR SESION*/
+h1 {
+    color: #00bfff; /* Texto celeste */
+    text-align: center;
+}
+
+.mensaje {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    border: 2px solid #00bfff; /* Borde celeste */
+}
+
+.mensaje p {
+    margin-bottom: 20px;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3b3b3b;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #00bfff; /* Borde celeste */
+    border-radius: 5px;
+    transition: background-color 0.3s, border 0.3s;
+    cursor: pointer;
+}
+
+a.btn:hover {
+    background-color: #00bfff; /* Fondo celeste al hacer hover */
+    color: #121212; /* Texto negro */
+}
